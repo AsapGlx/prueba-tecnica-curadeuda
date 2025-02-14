@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class PersonaController extends Controller
 {
+    // Constructor que aplica el middleware 'auth'
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     // Muestra el listado de personas
     public function index()
     {
