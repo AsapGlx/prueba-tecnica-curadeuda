@@ -66,6 +66,7 @@
             <input type="text" name="pais" id="pais" class="form-control" value="{{ old('pais', $persona->pais) }}">
         </div>
         <button type="submit" class="btn btn-primary">Actualizar Persona</button>
+        <a href="{{ route('personas.index') }}" class="btn btn-secondary">Cancelar</a>
     </form>
 </div>
 @endsection

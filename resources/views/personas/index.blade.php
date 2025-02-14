@@ -10,6 +10,12 @@
         </div>
     @endif
 
+    <!-- Botón para Cerrar Sesión -->
+    <form action="{{ route('logout') }}" method="POST" class="d-flex justify-content-end mb-3">
+        @csrf
+        <button type="submit" class="btn btn-secondary">Cerrar Sesión</button>
+    </form>
+
     <a href="{{ route('personas.create') }}" class="btn btn-primary mb-3">Crear Nueva Persona</a>
 
     <table class="table table-bordered">
